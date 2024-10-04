@@ -1,0 +1,71 @@
+/* Resolução Notebook 
+  1920 x 1080
+*/
+
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 1%;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 95vw;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-primeira-linha {
+  height: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-segunda-linha {
+  height: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-segunda-linha-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.header-segunda-linha-icons {
+  width: 5%;
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 30%;
+}
+
+.header-search {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.header-search label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.header-search-input {
+  width: 90%;
+  height: 100%;
+  border: 1px solid blue;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #faf5f5;
+  color: black;
+  font-size: small;
+}

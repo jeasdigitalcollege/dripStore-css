@@ -1,0 +1,90 @@
+/* Estilos Customizados */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  /* height Não deve ser 100% porque o html tem height=0. 100% de zero = zero */
+  height: 100vh;
+  display: flex;
+}
+
+.main-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-right-card {
+  width: 350px;
+  height: 450px;
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.main-right-card .main-right-card-input {
+  margin-top: 30px;
+  width: 90%;
+  height: 80px; /* Não parece baixar os campos com o aumento da borda */
+}
+
+.main-right-card .main-right-card-input input {
+  width: 95%;
+  border: none;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  outline: none; /* Remove borda do campo que vem no navegador */
+}
+
+.main-right-card .main-right-card-input input:focus {
+  border: 1px solid #2678e4;
+}
+
+.main-right-card button {
+  margin-top: 80px;
+  width: 95%;
+  border-radius: 5px;
+  border: none;
+  background: #2678e4;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: large;
+}
+
+.main-right-card button:hover {
+  background: none;
+  border: 1px solid #2678e4;
+  color: #2678e4;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.main-right-card button:active {
+  background: #2678e4;
+  color: #fff;
+}
+
+.main-right-card h2 {
+  margin-top: 30px;
+  color: blue;
+}

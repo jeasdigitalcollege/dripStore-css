@@ -1,0 +1,78 @@
+/* 
+  Ponto de interrupção	Infixo de classe		Dimensões
+  Extra pequeno			    Nenhum			        <576px
+  Pequeno				        sm				          ≥576px	
+  Médio				          md				          ≥768px
+  Grande				        lg				          ≥992px
+  Extra grande			    xl				          ≥1200px
+  Extra extra grande		xxl				          ≥1400px
+*/
+/* Resolução Notebook 
+  1920 x 1080
+*/
+
+/* Extra pequeno (xs) - <576px */
+@media (max-width: 575px) {
+  /* Estilos para telas extra pequenas */
+  /* 
+  body {
+    font-size: 14px;
+  } */
+}
+
+/* Pequeno (sm) - ≥576px */
+@media (min-width: 576px) {
+  /* Estilos para telas pequenas */
+  /* 
+  .container {
+    max-width: 720px;
+  }*/
+}
+
+/* Médio (md) - ≥768px */
+@media (min-width: 768px) {
+  /* Estilos para telas médias */
+  /*
+  .navbar {
+    display: flex;
+  }*/
+}
+
+/* Grande (lg) - ≥992px */
+@media (min-width: 992px) {
+  /* Estilos para telas grandes */
+  /* Exemplo: */
+  .header-primeira-linha {
+    display: none; /* Oculta a primeira linha, pois não é mais necessária */
+  }
+
+  .header {
+    display: block;
+  }
+
+  .header-segunda-linha {
+    height: 100%;
+  }
+
+  .header-search {
+    display: none; /* Oculta a primeira linha, pois não é mais necessária */
+  }
+}
+
+/* Extra grande (xl) - ≥1200px */
+@media (min-width: 1200px) {
+  /* Estilos para telas extra grandes */
+  /* Exemplo: */
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Extra extra grande (xxl) - ≥1400px */
+@media (min-width: 1400px) {
+  /* Estilos para telas extra extra grandes */
+  /* Exemplo: */
+  .hero-image {
+    height: 600px;
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/home.css" />
+  <link rel="stylesheet" href="../css/mediaQuery.css" />
+
+  <title>Drip Store</title>
+</head>
+
+<body>
+  <header class=" header">
+
+    <div class="header-div-top-row">
+
+      <div class="header-div-logo">
+        <a href="../index.html"><img class="header-img-logo" src="../assets/logo.png" alt="Logotipo"></a>
+      </div>
+
+      <!-- Ícone do menu sandwich -->
+      <div class="header-div-menu-toggle" id="header-div-menu-toggle">
+        <i class="fa fa-bars"></i>
+      </div>
+
+      <div class="header-div-search">
+        <input class="header-input-search" type="text" name="input" id="input" placeholder="Pesquisar produto..." />
+        <i id="header-icon-search" class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <div class="header-div-buttons">
+
+        <a href="#">Cadastre-se</a>
+
+        <button>Entrar</button>
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+      </div>
+
+    </div>
+
+    <div class="header-div-bottom-row">
+      <nav class="header-div-bottom-row-nav">
+        <a href="#">Home</a>
+        <a href="#">Produtos</a>
+        <a href="#">Categorias</a>
+        <a href="#">Meus Pedidos</a>
+      </nav>
+    </div>
+
+  </header>
+
+  <script>
+    const menuToggle = document.getElementById('header-div-menu-toggle');
+    const nav = document.querySelector('.header-div-bottom-row-nav');
+
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+
+</html>
