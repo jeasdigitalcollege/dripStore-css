@@ -11,63 +11,242 @@
   1920 x 1080
 */
 
-/* Extra pequeno (xs) - <576px */
-@media (max-width: 575px) {
+/* ---------------------------------------------------------------- */
+/* Extra Extra Extra pequeno (xs) - <260px */
+@media (max-width: 260px) {
   /* Estilos para telas extra pequenas */
-  /* 
-  body {
-    font-size: 14px;
-  } */
 }
 
+/* ---------------------------------------------------------------- */
+/* Extra Extra pequeno (xs) - ≥260px */
+@media (min-width: 260px) {
+  /* Estilos para telas extra pequenas */
+}
+
+/* ---------------------------------------------------------------- */
+/* Extra pequeno (xs) - ≥430px */
+@media (min-width: 430px) {
+  /* Estilos para telas extra pequenas */
+}
+
+/* ---------------------------------------------------------------- */
 /* Pequeno (sm) - ≥576px */
 @media (min-width: 576px) {
   /* Estilos para telas pequenas */
-  /* 
-  .container {
-    max-width: 720px;
-  }*/
 }
 
+/* ---------------------------------------------------------------- */
 /* Médio (md) - ≥768px */
 @media (min-width: 768px) {
   /* Estilos para telas médias */
-  /*
-  .navbar {
-    display: flex;
-  }*/
 }
 
+/* ---------------------------------------------------------------- */
 /* Grande (lg) - ≥992px */
 @media (min-width: 992px) {
   /* Estilos para telas grandes */
   /* Exemplo: */
-  .header-primeira-linha {
+
+  .header-div-lin01 {
+    display: none; /* Oculta a primeira linha do mobile */
+  }
+
+  .header-div-lin02-icon {
+    display: none; /* Oculta os ícones do mobile da segunda linha */
+  }
+
+  .fas.fa-bars {
+    display: none; /* Oculta Menu Hamburger Mobile */
+  }
+
+  .header-div-lin02 {
+    padding: 2%; /*Adicionando um padding para garantir que o conteúdo não fique colado nas bordas*/
+  }
+
+  .header-div-lin02-div-logo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    column-gap: 2%;
+  }
+
+  .header-div-lin02-div-logo-img {
+    width: 15%;
+    height: auto;
+    font-size: calc(1vw + 8px);
+  }
+
+  .header-div-lin02-div-logo-span {
+    font-size: calc(2.7vw + 3px);
+  }
+
+  .header-div-lin02-div-search-registre-desk {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-div-lin02-div-search-registre-div-input-desk {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    column-gap: 4%;
+  }
+
+  .header-div-lin02-div-search-resgistre-div-input-input-desk {
+    width: 90%;
+    height: auto;
+    outline: none;
+    padding: 1.7%;
+  }
+
+  .header-div-lin02-div-search-resgistre-div-input-i-desk {
+    opacity: 50%;
+  }
+
+  .header-div-lin02-div-search-registre-a-desk {
+    font-size: calc(0.9vw + 8px);
+  }
+
+  .header-div-lin02-div-search-registre-a-desk:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .header-div-lin02-div-links-desk {
+    width: 12%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-div-lin02-div-links-button-desk {
+    width: 55%;
+    height: 5vh;
+    background-color: #474747;
+    color: white;
+    border-radius: 8px;
+  }
+
+  .header-div-lin02-div-links-button-desk:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+  }
+
+  .header-div-lin-3-search-mobi {
     display: none; /* Oculta a primeira linha, pois não é mais necessária */
   }
 
-  .header {
-    display: block;
+  .header-nav-lin-3-menu-desk {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
   }
 
-  .header-segunda-linha {
-    height: 100%;
+  .header-nav-lin-3-menu-desk-ul {
+    display: flex; /* Transforma a lista em um flex container */
+    justify-content: flex-start; /* Distribui os itens no início */
   }
 
-  .header-search {
-    display: none; /* Oculta a primeira linha, pois não é mais necessária */
+  .header-nav-lin-3-menu-desk-ul li {
+    margin-right: 3%; /* Adiciona um espaçamento entre os itens */
   }
+  /* Final do Header */
+
+  /* Início do Main */
+  .main {
+    margin-top: 1%;
+    border: 1px solid blue;
+  }
+  /* Final do Main */
+
+  /* Início do Footer */
+  .footer {
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-section-digital {
+    margin: 0;
+    padding: 0;
+    width: 30%;
+  }
+
+  .footer-section-digital-logo {
+    width: calc(50% + 20px);
+    height: auto; /* Mantém a proporção da imagem */
+    padding: 0;
+  }
+
+  .footer-section-digital-div p {
+    font-size: calc(0.5vw + 8px);
+    text-align: justify;
+  }
+
+  .footer-section-digital-redessociais span {
+    font-size: calc(0.5vw + 8px);
+    margin-right: 3%; /* Adiciona espaço à direita entre os ícones */
+  }
+
+  .footer-section-informacoesCategorias {
+    width: 35%;
+    margin: 0;
+    padding: 3;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-section-informacoescategorias-div-informacoes h2 {
+    font-size: calc(1vw + 8px);
+  }
+
+  .footer-section-informacoescategorias-div-informacoes-div-a a {
+    font-size: calc(0.5vw + 8px);
+  }
+
+  .footer-section-informacoescategorias-div-categorias h2 {
+    font-size: calc(1vw + 8px);
+  }
+
+  .footer-section-informacoescategorias-div-categorias-div-a a {
+    font-size: calc(0.5vw + 8px);
+  }
+
+  .footer-section-contatos {
+    width: 30%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-section-contatos h2 {
+    font-size: calc(1vw + 8px);
+  }
+
+  .footer-section-contatos p {
+    font-size: calc(0.5vw + 8px);
+  }
+
+  /* Final do Footer */
 }
 
+/* ---------------------------------------------------------------- */
 /* Extra grande (xl) - ≥1200px */
 @media (min-width: 1200px) {
   /* Estilos para telas extra grandes */
   /* Exemplo: */
-  .container {
-    max-width: 1140px;
-  }
 }
 
+/* ---------------------------------------------------------------- */
 /* Extra extra grande (xxl) - ≥1400px */
 @media (min-width: 1400px) {
   /* Estilos para telas extra extra grandes */

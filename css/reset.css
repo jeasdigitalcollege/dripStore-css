@@ -5,6 +5,10 @@
   box-sizing: border-box; /* Garante que width/height incluam padding e bordas */
 }
 
+html {
+  font-size: 16px;
+}
+
 img {
   max-width: 100%; /* Garante que imagens respeitem o tamanho do contêiner */
   height: auto; /* Mantém a proporção da imagem */

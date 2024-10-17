@@ -2,69 +2,184 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drip Store - CSS</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../css/reset.css" />
-  <link rel="stylesheet" href="../css/home.css" />
-  <link rel="stylesheet" href="../css/mediaQuery.css" />
+    <!-- Configuração Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/logo-favicon.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
 
-  <title>Drip Store</title>
+    <!-- Links Arquivos CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/mediaQuery.css">
+
+    <!-- Links Font Awsome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body>
-  <header class=" header">
 
-    <div class="header-div-top-row">
+    <header class="header">
 
-      <div class="header-div-logo">
-        <a href="../index.html"><img class="header-img-logo" src="../assets/logo.png" alt="Logotipo"></a>
-      </div>
+        <!-- Início da Linha 1 - Mobile -->
+        <div class="header-div-lin01">
 
-      <!-- Ícone do menu sandwich -->
-      <div class="header-div-menu-toggle" id="header-div-menu-toggle">
-        <i class="fa fa-bars"></i>
-      </div>
+            <span class="header-div-lin01-span">9:41</span>
 
-      <div class="header-div-search">
-        <input class="header-input-search" type="text" name="input" id="input" placeholder="Pesquisar produto..." />
-        <i id="header-icon-search" class="fa-solid fa-magnifying-glass"></i>
-      </div>
+            <div class="header-div-lin01-div-icons">
+                <i class="fa-solid fa-signal"></i>
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-battery-full"></i>
+            </div>
+        </div>
+        <!-- Final da Linha 1 -->
 
-      <div class="header-div-buttons">
+        <!-- Início da Linha 2 - Mobile e Desktop -->
+        <div class="header-div-lin02">
 
-        <a href="#">Cadastre-se</a>
+            <!--Menu Hamburger Mobile -->
+            <i class="header-div-lin02-icon fas fa-bars"></i>
 
-        <button>Entrar</button>
+            <!-- Logo é usado no Mobile e Desktop -->
+            <div class="header-div-lin02-div-logo">
+                <!-- class="header-div-lin02-div-logo" -->
 
-        <i class="fa-solid fa-cart-shopping"></i>
+                <img class="header-div-lin02-div-logo-img" src="../assets/imagens/logo.svg" alt="Logo">
+                <!-- class="header-div-lin02-div-logo-img" -->
 
-      </div>
+                <span class="header-div-lin02-div-logo-span"><a href="">Drip Store</a></span>
+                <!-- class="header-div-lin02-div-logo-span" -->
+            </div>
 
-    </div>
+            <!-- Pesquisa para Telas acima de 992px - Desktop -->
+            <div class="header-div-lin02-div-search-registre">
 
-    <div class="header-div-bottom-row">
-      <nav class="header-div-bottom-row-nav">
-        <a href="#">Home</a>
-        <a href="#">Produtos</a>
-        <a href="#">Categorias</a>
-        <a href="#">Meus Pedidos</a>
-      </nav>
-    </div>
+                <div class="header-div-lin02-div-search">
 
-  </header>
+                    <input class="header-div-lin02-div-search-input" type="text" id="pesquisa" name="pesquisa"
+                        placeholder="Pesquisar Produto...">
 
-  <script>
-    const menuToggle = document.getElementById('header-div-menu-toggle');
-    const nav = document.querySelector('.header-div-bottom-row-nav');
+                    <a href=""><i class="header-div-lin02-div-search-anchor fas fa-search"></i></a>
 
-    menuToggle.addEventListener('click', () => {
-      nav.classList.toggle('active');
-    });
-  </script>
+                </div>
+
+                <a class="header-div-lin02-div-search-registre-anchor" href="#">Cadastre-se</a>
+
+            </div>
+
+            <!-- Links para Telas acima de 992px - Desktop -->
+            <div class="header-div-lin02-div-links">
+
+                <button class="header-div-lin02-div-links-button">
+                    Entrar
+                </button>
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
+
+            </div>
+
+            <!-- Icons - Mobile -->
+            <div class="header-div-lin02-div-icons">
+                <a href=""><i class="fas fa-search"></i></a>
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+
+        </div>
+        <!-- Final da Linha 2 -->
+
+    </header>
+
+    <main class="main">
+        <p>Main</p>
+    </main>
+
+    <footer class="footer">
+        <div>
+
+            <section class="footer-section-digital">
+
+                <div class="footer-section-digital-div-logo">
+
+                    <img src="../assets/imagens/Logo-Black-White.png" alt="Logo">
+                </div>
+
+                <div class="footer-section-digital-div-paragrafo">
+
+                    <p>
+                        A Digital Store é uma plataforma de e-commerce voltada para a venda de moda urbana e
+                        contemporânea.
+                        A Digital Store foi projetada para oferecer uma experiência de compra intuitiva, rápida e
+                        segura,
+                        permitindo que os usuários explorem um catálogo diversificado de produtos e realizem suas
+                        compras de
+                        forma eficiente.
+                    </p>
+                </div>
+
+                <div class="footer-section-digital-div-redesSociais">
+                    <!-- class="footer-section-digital-div-redesSociais" -->
+
+                    <span><a href=""><i class="fa-brands fa-facebook-f"></i></a></span>
+                    <span><a href=""><i class="fa-brands fa-instagram"></i></a></span>
+                    <span><a href=""><i class="fa-brands fa-twitter"></i></a></span>
+                </div>
+            </section>
+
+            <section class="footer-section-informacoesCategorias">
+
+                <div class="footer-section-informacoesCategorias-div-informacoes">
+
+                    <h2>Informações</h2>
+
+                    <div class="footer-section-informacoesCategorias-div-informacoes-div-anchors">
+
+                        <a href="">Sobre Drip Store</a>
+                        <a href="">Segurança</a>
+                        <a href="">Whishlist</a>
+                        <a href="">Blog</a>
+                        <a href="">Trabalhe Conosco</a>
+                        <a href="">Meus Pedidos</a>
+                    </div>
+                </div>
+
+                <div class="footer-section-informacoesCategorias-div-categorias">
+
+                    <h2>Categorias</h2>
+
+                    <div class="footer-section-informacoesCategorias-div-categorias-div-anchors">
+
+                        <a href="">Esporte e Lazer</a>
+                        <a href="">Casual</a>
+                        <a href="">Utilitário</a>
+                        <a href="">Corrida</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer-section-contatos">
+
+                <h2>Contato</h2>
+
+                <p>Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza-Ce, 60150-161</p>
+                <p>(85) 3051-3411</p>
+
+            </section>
+
+        </div>
+
+        <section class="footer-section-final">
+            <!-- class="footer-section-final" -->
+
+            <hr>
+
+            <span> @ 2022 Digital College</span>
+
+        </section>
+
+    </footer>
 </body>
 
 </html>

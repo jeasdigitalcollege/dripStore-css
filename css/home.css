@@ -1,157 +1,237 @@
-/* Estilos Customizados */
-html,
+/* Resolução Notebook 
+  1920 x 1080
+*/
+
+/* Importa Font Inter */
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter_18pt-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter_18pt-Bold.ttf") format("truetype");
+  font-weight: 700; /* Define o peso bold */
+  font-style: normal; /* O estilo é normal, pois não é itálico */
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter_18pt-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+/* Fim Importação Font */
+
 body {
-  font-family: sans-serif; /* Definição de tipografia */
-  width: 100%; /* Garante que o body ocupe toda a largura */
-  height: 100%; /* Garante que o body ocupe toda a altura */
-  color: black; /* Cor do texto */
-  line-height: 1; /* Reseta o espaçamento de linha */
+  width: 100vw;
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header {
-  width: 100vw;
-  height: 10vh;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.header-div-top-row {
-  width: 100%; /* Adapta a largura da div ao tamanho do header */
-  padding: 0.6%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-div-logo {
-  width: 25%; /* 25% da largura do container pai */
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.header-img-logo {
-  width: 100%; /* Ajusta a largura para 100% da largura do container pai */
-  height: auto; /* Mantém a proporção da imagem automaticamente */
-}
-
-.header-img-logo:hover {
-  color: black;
-}
-
-/* Estilos do ícone do menu sandwich */
-.header-div-menu-toggle {
-  display: none; /* Escondido por padrão */
-  cursor: pointer;
-}
-
-.header-div-menu-toggle i {
-  font-size: 2rem;
-  color: #c92071;
-}
-
-.header-div-search {
-  display: flex;
-  width: 40%; /* 40% da largura do container pai */
-  height: 80%; /* Altura mínima de 10% da altura do container pai */
-  justify-content: center;
-  align-items: center;
-}
-
-.header-input-search {
-  padding-left: 1.5%;
-  width: 75%;
-  height: 100%;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  background-color: #eae7e7;
-}
-
-.header-input-search::placeholder {
-  color: #c92071;
-}
-
-#header-icon-search {
-  width: 5%;
-  font-size: 140%; /* Ajusta o tamanho da fonte em relação ao pai */
-  font-weight: bold;
-  margin-left: 1vw;
-  color: #c92071;
-  align-self: center; /* Centraliza verticalmente dentro do flex */
-}
-
-.header-div-buttons {
-  width: 30%; /* 30% da largura do container pai */
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.header-div-buttons a {
-  font-size: 130%;
-  color: #c92071;
-}
-
-.header-div-buttons a:hover {
-  text-decoration: underline;
-}
-
-.header-div-buttons button {
-  width: 30%;
-  height: 80%;
-  border-radius: 5px;
-  color: white;
-  background-color: #c92071;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 100%;
-}
-
-.header-div-buttons button:hover {
-  background-color: black;
-}
-
-.header-div-buttons i {
-  width: 15%;
-  height: 100%;
-  font-size: x-large;
-  color: #c92071;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header-div-buttons i:hover {
-  color: black;
-}
-
-.header-div-bottom-row {
-  padding: 0.5%;
-  width: 100%; /* Usa 100% da largura disponível no container pai */
-  height: 10vh; /* Mantém altura fixa */
-  font-size: 110%;
-  color: #c92071;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /*flex-wrap: nowrap; /* Evita que os elementos quebrem a linha */
-}
-
-.header-div-bottom-row-nav {
+/* Linha-01 */
+.header-div-lin01 {
   width: 100%;
+  height: auto;
   display: flex;
+  justify-content: space-between;
+  padding: 1.4%; /*Adicionando um padding para garantir que o conteúdo não fique colado nas bordas*/
 }
 
-.header-div-bottom-row-nav a {
-  margin-right: 2%;
+.header-div-lin01-span {
+  font-size: calc(1vw + 8px);
 }
 
-.header-div-bottom-row-nav a:hover {
-  color: blue;
-  text-decoration: underline;
+.header-div-lin01-div-icons {
+  font-size: calc(1vw + 8px);
+}
+
+/* Linha-02 */
+.header-div-lin02 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%; /*Adicionando um padding para garantir que o conteúdo não fique colado nas bordas*/
+}
+
+.header-div-lin02-icon {
+  font-size: calc(3vw + 8px);
+}
+
+.header-div-lin02-div-logo {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  column-gap: 2%;
+}
+
+.header-div-lin02-div-logo-img {
+  width: 15%;
+  height: auto;
+  font-size: calc(1vw + 8px);
+}
+
+.header-div-lin02-div-logo-span {
+  font-size: calc(3vw + 3px);
+}
+
+.header-div-lin02-div-search-registre {
+  display: none;
+}
+
+.header-div-lin02-div-links {
+  display: none;
+}
+
+.header-div-lin02-div-icons {
+  width: 5%;
+  font-size: calc(2vw + 8px);
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 30%;
+}
+
+/* Section Main */
+.main {
+  border: 1px solid yellow;
+  width: 100%;
+  height: auto;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.main p {
+  font-size: calc(1vw + 8px);
+}
+
+/* Section Footer */
+.footer {
+  background-color: #1f1f1f;
+  color: white;
+  margin-top: 1%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-section-digital {
+  margin-top: 2%;
+  padding: 1%;
+}
+
+.footer-section-digital-div-logo {
+  padding-left: 3%;
+  width: calc(30% + 20px);
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.footer-section-digital-div-paragrafo p {
+  font-size: calc(1vw + 8px);
+  padding: 2% 3% 3% 3%;
+  text-align: justify;
+}
+
+.footer-section-digital-div-redesSociais {
+  padding-left: 3%;
+}
+
+.footer-section-digital-div-redesSociais span {
+  font-size: calc(1vw + 8px);
+  margin-right: 3%; /* Adiciona espaço à direita entre os ícones */
+}
+
+.footer-section-informacoesCategorias {
+  width: 100%;
+  padding: 3%;
+  display: flex;
+  column-gap: 15%;
+}
+
+.footer-section-informacoesCategorias-div-informacoes h2 {
+  margin-bottom: 10%;
+  font-size: calc(2.5vw + 8px);
+}
+
+.footer-section-informacoesCategorias-div-informacoes-div-anchors {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section-informacoesCategorias-div-informacoes-div-anchors a {
+  margin-bottom: 10%;
+  font-size: calc(1.2vw + 8px);
+}
+
+.footer-section-informacoescategorias-div-categorias h2 {
+  margin-bottom: 10%;
+  font-size: calc(2.5vw + 8px);
+}
+
+.footer-section-informacoesCategorias-div-categorias-div-anchors {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section-informacoesCategorias-div-categorias-div-anchors a {
+  margin-bottom: 10%;
+  font-size: calc(1.2vw + 8px);
+}
+
+.footer-section-contatos {
+  width: 100%;
+  padding: 0 3% 0 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer-section-contatos h2 {
+  margin-bottom: 3%;
+  font-size: calc(2.5vw + 8px);
+}
+
+.footer-section-contatos p {
+  margin-bottom: 3%;
+  font-size: calc(1.2vw + 8px);
+}
+
+.footer-section-final {
+  margin: 5% 0 5% 0;
+  width: 100%;
+  height: 6vh; /* Mantém a proporção da imagem */
+  font-size: calc(1vw + 8px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-section-final hr {
+  margin-bottom: 5%;
+  width: 90%;
+}
+
+.footer-section-final span {
+  margin-bottom: 2%;
 }

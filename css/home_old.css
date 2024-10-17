@@ -1,0 +1,157 @@
+/* Estilos Customizados */
+html,
+body {
+  font-family: sans-serif; /* Definição de tipografia */
+  width: 100%; /* Garante que o body ocupe toda a largura */
+  height: 100%; /* Garante que o body ocupe toda a altura */
+  color: black; /* Cor do texto */
+  line-height: 1; /* Reseta o espaçamento de linha */
+}
+
+.header {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-div-top-row {
+  width: 100%; /* Adapta a largura da div ao tamanho do header */
+  padding: 0.6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-div-logo {
+  width: 25%; /* 25% da largura do container pai */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-img-logo {
+  width: 100%; /* Ajusta a largura para 100% da largura do container pai */
+  height: auto; /* Mantém a proporção da imagem automaticamente */
+}
+
+.header-img-logo:hover {
+  color: black;
+}
+
+/* Estilos do ícone do menu sandwich */
+.header-div-menu-toggle {
+  display: none; /* Escondido por padrão */
+  cursor: pointer;
+}
+
+.header-div-menu-toggle i {
+  font-size: 2rem;
+  color: #c92071;
+}
+
+.header-div-search {
+  display: flex;
+  width: 40%; /* 40% da largura do container pai */
+  height: 80%; /* Altura mínima de 10% da altura do container pai */
+  justify-content: center;
+  align-items: center;
+}
+
+.header-input-search {
+  padding-left: 1.5%;
+  width: 75%;
+  height: 100%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #eae7e7;
+}
+
+.header-input-search::placeholder {
+  color: #c92071;
+}
+
+#header-icon-search {
+  width: 5%;
+  font-size: 140%; /* Ajusta o tamanho da fonte em relação ao pai */
+  font-weight: bold;
+  margin-left: 1vw;
+  color: #c92071;
+  align-self: center; /* Centraliza verticalmente dentro do flex */
+}
+
+.header-div-buttons {
+  width: 30%; /* 30% da largura do container pai */
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-div-buttons a {
+  font-size: 130%;
+  color: #c92071;
+}
+
+.header-div-buttons a:hover {
+  text-decoration: underline;
+}
+
+.header-div-buttons button {
+  width: 30%;
+  height: 80%;
+  border-radius: 5px;
+  color: white;
+  background-color: #c92071;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 100%;
+}
+
+.header-div-buttons button:hover {
+  background-color: black;
+}
+
+.header-div-buttons i {
+  width: 15%;
+  height: 100%;
+  font-size: x-large;
+  color: #c92071;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-div-buttons i:hover {
+  color: black;
+}
+
+.header-div-bottom-row {
+  padding: 0.5%;
+  width: 100%; /* Usa 100% da largura disponível no container pai */
+  height: 10vh; /* Mantém altura fixa */
+  font-size: 110%;
+  color: #c92071;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*flex-wrap: nowrap; /* Evita que os elementos quebrem a linha */
+}
+
+.header-div-bottom-row-nav {
+  width: 100%;
+  display: flex;
+}
+
+.header-div-bottom-row-nav a {
+  margin-right: 2%;
+}
+
+.header-div-bottom-row-nav a:hover {
+  color: blue;
+  text-decoration: underline;
+}
